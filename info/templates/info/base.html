@@ -1,0 +1,73 @@
+<!DOCTYPE html>{% load static %}
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>{% block title %}{% endblock title %}</title>
+	{% comment %} <link rel="stylesheet" href="{% static 'cdn/fontawesome/font-awesome.min.css' %}"> {% endcomment %}
+
+	<link rel="shortcut icon" type="image/png" href="https://zeecom.co.ls/wp-content/uploads/2017/08/cropped-logo-for-favicon-300x300.png"/>
+
+	<!-- Custom CSS -->
+	<link rel="stylesheet" href="{% static 'css/main.css' %}">
+
+</head>
+<body>
+	
+	{% block body %}
+		<header>
+			<div class="menu-btn">
+				<span class="menu-btn__burger"></span>
+			</div>
+
+			<nav class="nav">
+				<ul class="menu-nav">
+					<li class="menu-nav__item {% if section == "home" %}active{% endif %}">
+						<a href="{% url 'homePage' %}" class="menu-nav__link">Home</a>
+					</li>
+					<li class="menu-nav__item {% if section == "about" %}active{% endif %}">
+						<a href="{% url 'aboutPage' %}" class="menu-nav__link">About Me</a>
+					</li>
+					<li class="menu-nav__item {% if section == "projects" %}active{% endif %}">
+						<a href="{% url 'projectsPage' %}" class="menu-nav__link">Projects</a>
+					</li>
+					<li class="menu-nav__item {% if section == "contact" %}active{% endif %}">
+						<a href="{% url 'contactPage' %}" class="menu-nav__link">Contact Me</a>
+					</li>
+				</ul>
+			</nav>
+		</header>
+
+		<main>
+			{% block content %}
+			{% endblock content %}
+		</main>
+
+		<div class="social">
+
+				
+			<div class="social-icons" id="twitter">
+			<a href="{{ contact.twitter }}"><i class="fab fa-twitter fa-lg">  </i></a>
+		</div>
+		<div class="social-icons" id="facebook">
+			<a href="{{ contact.facebook }}"><i class="fab fa-facebook fa-lg">  </i></a>
+		</div>
+
+		<div class="social-icons" id="instagram">
+			<a href="{{ contact.instagram }}"><i class="fab fa-instagram fa-lg">  </i></a>
+		</div>
+
+		<div class="social-icons" id="github">
+			<a href="{{ contact.github }}"><i class="fab fa-github fa-lg">  </i></a>
+		</div>
+	</div>
+
+
+		<footer><small>&copy; Copyright 2022</small></footer>
+	{% endblock body %}
+		<!-- Custom JS -->
+		<script src="{% static 'js/main.js' %}"></script>
+		<script src="https://kit.fontawesome.com/a548b28c9d.js" crossorigin="anonymous"></script>
+</body>
+</html>

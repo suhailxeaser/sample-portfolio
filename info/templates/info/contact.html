@@ -1,0 +1,31 @@
+{% extends './base.html' %}
+
+{% block title %}Contact Me{% endblock title %}
+
+{% block content %}
+
+		<section class="contact">
+			<h2>Contact Me...</h2>
+
+			<div class="contact__list">
+				<div class="contact__email">
+					<i class="fas fa-envelope"></i> Email
+
+					<div class="text-secondary">
+						<a data-email="{{ contact.email }}" href="mailto:{{ contact.email }}">{{ contact.email }}</a>
+					</div>
+				</div>
+
+				<div class="contact__phone">
+					<i class="fas fa-phone"></i> Phone
+					<div class="text-secondary">{{ contact.phone }}</div>
+				</div>
+
+				<div class="contact__address">
+					<i class="fas fa-building"></i> Address
+					<div class="text-secondary">{{ contact.address }}</div>
+				</div>
+			</div>
+		</section>
+
+{% endblock content %}

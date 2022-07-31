@@ -1,0 +1,16 @@
+{% extends './base.html' %}
+
+{% block title %}{{ home.full_name }}{% endblock title %}
+
+{% block content %}
+
+		<section class="home">
+			<h2>Hi My Name is</h2>
+			<h1 class="home__name">
+				<span class="home__name">{{ home.full_name }}</span>
+			</h1>
+			<h2>{{ home.short_bio }}</h2>
+		</section>
+
+		{% endblock content %}
+

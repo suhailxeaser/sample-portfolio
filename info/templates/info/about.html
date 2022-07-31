@@ -1,0 +1,25 @@
+{% extends './base.html' %}
+
+{% block title %}About Me{% endblock title %}
+
+{% block content %}
+
+		<section class="about">
+			<div class="about__bio-image">
+				<h2 class="text-secondary">BIO</h2>
+				<div class="about__bio">
+					<p>{{ about.about }}</p>
+				</div>
+			</div>
+
+			<div class="jobs">
+				<div class="jobs__job">
+					<h2 class="text-secondary">{{ about.time_since.year }} - {% if about.time.to %}{{ about.time_to.year }}{% else %}Present{% endif %}</h2>
+					<h3>{{ about.work_place }}</h3>
+					<h6>{{ about.job }}</h6>
+					<p>{{ about.description }}</p>
+				</div>
+			</div>
+		</section>
+
+{% endblock content %}
