@@ -1,7 +1,6 @@
 sc_env
 cdn
 staticfiles
-*.json
 *.sqlite3
 *.pyc
 __pycache__
