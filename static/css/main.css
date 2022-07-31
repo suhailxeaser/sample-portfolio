@@ -13,21 +13,6 @@
   -ms-flex-align: center;
   align-items: center;
   text-align: center;
-  /* background: -webkit-gradient(
-      linear,
-      left bottom,
-      left top,
-      from(rgba(39, 39, 39, 0.9)),
-      to(rgba(39, 39, 39, 0.3))
-    ), */
-  /* url("../img/model-1.jpg") center top; */
-  /* background: linear-gradient(
-      to top,
-      rgba(39, 39, 39, 0.9),
-      rgba(39, 39, 39, 0.3)
-    ),
-    url("../img/model-1.jpg") center top; */
-  /* background-size: cover; */
 }
 
 .home__name {
@@ -205,21 +190,6 @@
 .about__bio-image {
   height: 50vh;
   width: 100%;
-  /* background: -webkit-gradient(
-      linear,
-      left bottom,
-      left top,
-      from(rgba(39, 39, 39, 0.9)),
-      to(rgba(39, 39, 39, 0.3))
-    ), */
-  /* url("../img/model-1.jpg") center top;
-  background: linear-gradient(
-      to top,
-      rgba(39, 39, 39, 0.9),
-      rgba(39, 39, 39, 0.3)
-    ),
-    url("../img/model-1.jpg") center top; */
-  /* background-size: cover; */
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -296,21 +266,6 @@
 .projects__bio-image {
   height: 30vh;
   width: 100%;
-  /* background: -webkit-gradient(
-      linear,
-      left top,
-      right top,
-      from(rgba(39, 39, 39, 0.9)),
-      to(rgba(39, 39, 39, 0.3))
-    ),
-    url("../img/model-1.jpg") center top;
-  background: linear-gradient(
-      to right,
-      rgba(39, 39, 39, 0.9),
-      rgba(39, 39, 39, 0.3)
-    ),
-    url("../img/model-1.jpg") center top;
-  background-size: cover; */
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -450,21 +405,6 @@
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  /* background: -webkit-gradient(
-      linear,
-      left bottom,
-      left top,
-      from(rgba(39, 39, 39, 0.9)),
-      to(rgba(39, 39, 39, 0.3))
-    ), */
-  /* url("../img/model-1.jpg") center top; */
-  /* background: linear-gradient(
-      to top,
-      rgba(39, 39, 39, 0.9),
-      rgba(39, 39, 39, 0.3)
-    ), */
-  /* url("../img/model-1.jpg") center top; */
-  /* background-size: cover; */
 }
 
 .contact h2 {
